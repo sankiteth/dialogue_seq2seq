@@ -183,7 +183,6 @@ def train():
     current_step = 0
     previous_losses = []
     while True:
-      print("Epoch {0}".format(current_step+1))
       # Choose a bucket according to data distribution. We pick a random number
       # in [0, 1] and use the corresponding interval in train_buckets_scale.
       random_number_01 = np.random.random_sample()
