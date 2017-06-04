@@ -128,6 +128,7 @@ class Seq2SeqModel(object):
 
     print("cell")
     cell = single_cell()
+    
     if num_layers > 1:
       cell = tf.contrib.rnn.MultiRNNCell([single_cell() for _ in range(num_layers)])
 

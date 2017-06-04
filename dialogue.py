@@ -182,7 +182,7 @@ def train():
     step_time, loss = 0.0, 0.0
     current_step = 0
     previous_losses = []
-    while current_step < FLAGS.num_epochs:
+    while True:
       print("Epoch {0}".format(current_step+1))
       # Choose a bucket according to data distribution. We pick a random number
       # in [0, 1] and use the corresponding interval in train_buckets_scale.
